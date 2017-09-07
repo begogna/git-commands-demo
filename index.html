@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="node_modules/impress.js/css/impress-demo.css" rel="stylesheet">
     <style>
-            #title q h1 {
+        #title q h1 {
             /* : 1px; */
             font-size: 1em;
             text-align: center;
-            }
+        }
     </style>
     <title>Document</title>
 </head>
@@ -19,12 +19,49 @@
 <body>
     <div id="impress">
         <div id="title" class="step slide" data-x="-1000">
-            <!-- On cree la propriete data-x -->
+            <!-- On cree la propriete data-x pour le positionnement dans la largeur (min 800)-->
             <q>
-            <h1>Git starter commands</h1>
-          </q>
-
+                <h1>Git starter commands</h1>
+            </q>
         </div>
+
+        <!-- Layer 1 -->
+        <div class="step slide" id="layer-1" data-x="1000">
+            <q>
+                <h1>Starter commands</h1>
+            </q>
+            <p>
+                git init <span>Inits a local repository
+                </p>
+                <p>
+                    git config --local user.name <strong>&lt;user name&gt; </strong>
+                    <span>Adds the name to the config file</span>
+            </p>
+            <p>
+                git config --local user.email <strong>&lt;user email&gt; </strong>
+                <span>Adds the email to the config file</span>
+            </p>
+        </div>
+
+        <!-- Layer 2 -->
+        <div class="step slide" id="layer-2" data-x="2000">
+            <q>
+                <h1>Add</h1>
+            </q>
+            <p>
+                git add<strong>&lt;filename&gt; </strong>
+                <span>Adds a file in the index
+            </p>
+            <p>
+                git add .
+                <span>Adds the files of the current folder in the index
+            </p>   
+            <p>
+                    git add -A
+                    <span>Adds all recursively the files in the index. AVOID !!
+                </p>   
+        </div>
+
     </div>
 
     <script src="node_modules/impress.js/js/impress.js">
