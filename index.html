@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="node_modules/impress.js/css/impress-demo.css" rel="stylesheet">
+    <style>
+            #title q h1 {
+            /* : 1px; */
+            font-size: 1em;
+            text-align: center;
+            }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="impress">
+        <div id="title" class="step slide" data-x="-1000">
+            <!-- On cree la propriete data-x -->
+            <q>
+            <h1>Git starter commands</h1>
+          </q>
+
+        </div>
+    </div>
+
+    <script src="node_modules/impress.js/js/impress.js">
+
+    </script>
+
+    <script>
+        var rootElement = document.querySelector("#impress");
+        rootElement.addEventListener("impress:init", function () {
+            console.log("impress.run...");
+        });
+        impress().init();
+    </script>
+</body>
+
+</html>
