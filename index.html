@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="node_modules/impress.js/css/impress-demo.css" rel="stylesheet">
+    <link href="styles/myCss.css" rel="stylesheet">
     <style>
         #title q h1 {
             /* : 1px; */
@@ -98,8 +99,52 @@
                 <li>Layer: </li>
                 <li>Add a new layer to my file index.html</li>                
             </ul>
-        </div>     
+        </div>    
+        
+        
+               <!-- Layer 6 -->
+               <div class="step slide" id="layer-6" data-x="6000">
+                <q>
+                    <h1>Affichage log</h1>
+                </q>
+                <ul>
+                    <li>git log</li><span>Shows the commits</span>
+                <li>git log -1</li><span>Shows the first commit</span>
+                <li>git log --pretty-oneline --max-count=2</li><span>Shows in one line the two last commits</span>
+                <li>git log --oneline --until="5 minutes ago"</li><span>Shows the commits in the last 5 minutes</span>
+                <li>git log --oneline --author="begogna"</li><span>Shows the commits of that user</span>
+                <li> log --oneline --all --pretty=format:"%h %cd %s (%an)" --since="1 days ago"</li>
+                <span></span>
+                </ul>
+        </div>
 
+        <!-- layer 7 -->
+        <div id="layer-7" class="step slide" data-x="7000">
+            <h1>Log format</h1>
+            <ul>
+                <li>--pretty="..." exit format</li>
+                <li>%h abbreviation hash code commit</li>
+                <li>%d commit decoration</li>
+                <li>%ad commit date</li>
+                <li>%s commentaires</li>
+                <li>%an author name</li>
+                <li>--graph commit tree</li>
+                <li>--date=...</li>
+            </ul>
+        </div>
+
+        <!-- layer 8 -->
+        <div id="layer-8" class="step slide" data-x="8000">
+            <h1>Version...</h1>
+            <p>
+                git tag
+                <span>Show the releases</span>
+            </p>
+            <p>
+                git tag -a "your message"
+                <span>Creation of release</span>
+            </p>
+        </div>
     </div>
 
     <script src="node_modules/impress.js/js/impress.js">

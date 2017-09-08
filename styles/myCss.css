@@ -6,3 +6,7 @@ ul{
     list-style: circle;
     margin-left: 50px;
 }
+
+li{
+    color: blue;
+}
