@@ -135,7 +135,9 @@
 
         <!-- layer 8 -->
         <div id="layer-8" class="step slide" data-x="8000">
-            <h1>Version...</h1>
+            <q>
+                <h1>Version...</h1>
+            </q>
             <p>
                 git tag
                 <span>Show the releases</span>
@@ -149,20 +151,79 @@
 
         <!-- layer 9 -->
         <div id="layer-9" class="step slide" data-x="9000">
-            <h1>Branches</h1>
+            <q>
+                <h1>Branches</h1>
+            </q>
             <p>
-                git branch addPage
-                <span>Creates a branch called addPage</span>
+                git branch branchName
+                <span>Creates a branch called branchName</span>
             </p>
             <p>
-                git checkout addPage
-                <span>Places you in the branch called addPage</span>
+                git checkout branchName
+                <span>Places you in the branch called branchName</span>
             </p>
             <p>
-                git checkout -b addPage
-                <span>Creates a branch called addPage and places you in it</span>
+                git checkout -b branchName
+                <span>Creates a branch called branchName and places you in it</span>
+            </p>
+            <p>
+                git merge branchName
+                <span>Creates a branch called branchName and places you in it</span>
+            </p>
+            <p>
+                git branch -d or -D branchName
+                <span>Delete a branch called branchName. Forces delete with -D.</span>
             </p>
         </div>
+
+
+        <!-- layer 10 -->
+        <div id="layer-10" class="step slide" data-x="10000">
+            <q>
+                <h1>TP</h1>
+            </q>
+            <ul>
+                <li>Create new branch (testModification)</li>
+                <li>Add html file, modify css and index.html in this branch</li>
+                <li>Commit in this branch, one commit per change</li>
+                <li>Modify the file index.html in the branch master</li>
+                <li>Commit</li>
+                <li>Merge the branch and the master, fix conficts</li>
+                <li>Push to the remote repository</li>
+                <li>Try also removing branches and GIT GUI</li>
+            </ul>
+        </div>
+
+        <!-- layer 11 -->
+        <div id="layer-11" class="step slide" data-x="11000">
+            <q>
+                <h1>Remote repository</h1>
+            </q>
+            <p>
+                git remote origin repository
+                <span>Connection to a remote repository</span>
+            </p>
+            <p>
+                git push origin
+                <span>Sends the local commits to a remote repository from one or several branches</span>
+            </p>
+            <p>
+                git fetch
+                <span>Imports elements from the remote repository</span>
+            </p>
+            <p>
+                git pull
+                <span>Imports elements from the remote repository. Mix of fetch and merge, try to avoid !</span>
+            </p>
+            <p>
+                git clone
+                <span>Copy a project into a local repository</span>
+            </p>
+
+        </div>
+
+
+
     </div>
 
     <script src="node_modules/impress.js/js/impress.js">
